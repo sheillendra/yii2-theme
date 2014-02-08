@@ -3,7 +3,6 @@
 	"description": "Yii2 Theme",
 	"keywords": ["theme", "sheillendra", "yii2","yii"],
 	"type": "yii2-extension",
-	"license": "MIT",
 	"authors": [
 		{
 			"name": "Sheillendra",
