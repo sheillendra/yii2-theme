@@ -24,8 +24,9 @@ or add
 to the require section of your `composer.json` file.
 
 
-Config
+Application
 -------
+
 Change your application config (backend or frontend)
 ```
 'view'=>[
@@ -44,9 +45,6 @@ Change your application config (backend or frontend)
 	...
 ],
 ```
-
-Application
-------------
 
 folder structure
 
