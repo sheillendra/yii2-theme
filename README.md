@@ -35,9 +35,9 @@ Change your application config (backend or frontend)
 		'active'=>'theme_1',
 		'pathMap' => [ 
 			'@app/views' => [ 
-				'/web/themes/theme_1',
-				'/web/themes/theme_2',
-				'/web/themes/theme_3',
+				'@webroot/themes/theme_1/views',
+				'@webroot/themes/theme_2/views',
+				'@webroot/themes/theme_3/views',
 				...
 			]
 		],
