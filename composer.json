@@ -9,12 +9,18 @@
 			"email": "sheillendra@yahoo.com"
 		}
 	],
+	"replace": {
+		"yiisoft/yii2-ace-admin-theme": "self.version",
+		"yiisoft/yii2-mb-admin-theme": "self.version"
+	},
 	"require": {
 		"yiisoft/yii2": "*"
 	},
 	"autoload": {
 		"psr-4": {
-			"sheillendra\\theme\\": ""
+			"sheillendra\\theme\\": "",
+			"sheillendra\\ace\\": "themes/aceadmin/",
+			"sheillendra\\mbadmin\\": "themes/mbadmin/"
 		}
 	}
 }
