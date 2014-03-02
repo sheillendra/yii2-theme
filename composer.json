@@ -16,7 +16,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"sheillendra\\mbadmin\\": "vendor/sheillendra/yii2-theme/themes/yii2-mb-admin-theme"
+			"sheillendra\\mbadmin\\": "/vendor/sheillendra/yii2-theme/themes/yii2-mb-admin-theme"
 		}
 	}
 }
