@@ -1,3 +1,0 @@
-[submodule "themes/mbadmin"]
-	path = themes/mbadmin
-	url = git://github.com/sheillendra/yii2-theme-backend-mb.git
