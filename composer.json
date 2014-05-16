@@ -19,7 +19,7 @@
 	"autoload": {
 		"psr-4": {
 			"sheillendra\\theme\\": "",
-			"sheillendra\\mbadmin\\": "themes/mbadmin/"
+			"sheillendra\\aceadmin\\": "themes/aceadmin/"
 		}
 	}
 }
