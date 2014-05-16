@@ -1,0 +1,22 @@
+{
+	"name": "sheillendra/yii2-ace-admin-theme",
+	"description": "Yii2 Ace Admin Theme",
+	"keywords": ["theme", "sheillendra", "yii2","yii","admin template"],
+	"type": "yii2-extension",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Sheillendra",
+			"email": "sheillendra@yahoo.com"
+		}
+	],
+	"require": {
+		"yiisoft/yii2": "*",
+		"sheillendra/yii2-theme": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"sheillendra\\aceadmin\\": ""
+		}
+	}
+}
