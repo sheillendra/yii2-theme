@@ -58,7 +58,7 @@ class Theme extends yii\base\Component
 	 * @return string the themed file, or the original file if the themed version is not available.
 	 */
 	public function applyTo($path)
-	{
+	{ //echo Yii::$app->controllerNamespace,$path;exit;
 		$path = FileHelper::normalizePath($path);
 		foreach ($this->pathMap as $from => $tos) {
 			$from = FileHelper::normalizePath(Yii::getAlias($from)) . DIRECTORY_SEPARATOR;
