@@ -11,7 +11,7 @@
 	],
 	"require": {
 		"yiisoft/yii2": "*",
-		"bower-asset/font-awesome": "*",
+		"bower-asset/font-awesome": "*"
 	},
 	"autoload": {
 		"psr-4": {
