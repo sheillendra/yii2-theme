@@ -34,35 +34,34 @@ Change your application config (backend or frontend)
 		'class'=>'sheillendra\theme\components\Theme',
 		'active'=>'theme_1',
 		'pathMap' => [ 
-			'@app/views' => [ 
-				'@webroot/themes/theme_1/views',
-				'@webroot/themes/theme_2/views',
-				'@webroot/themes/theme_3/views',
-				...
+			'theme_1' => [
+				'@app/views' => ['@app/themes/theme_1/views']
+			],
+			'theme_2' => [
+				'@app/views' => ['@app/themes/theme_2/views']
 			]
+			...
 		],
 	],
 	...
 ],
 ```
 
-folder structure
+folder structure for application backend or frontend :
 
 ```
       backend/
           ...
           views/
-          web/
-             ...
-             themes/
-                 themes_1/
-                     assets/
-                     views/
-                         layout/
-                         controller_name/
-                         ...
-                 themes_2/
-                 themes_3/
+          themes/
+             themes_1/
+                 assets/
+                 views/
+                     layout/
+                     controller_name/
+                     controller_name/
+                     ...
+             themes_2/
 ```
 
 Module
@@ -80,6 +79,7 @@ folder structure :
                  views/
                      layout/
                      controller_name/
+                     controller_name/
                      ...
              themes_2/
              themes_3/
@@ -91,7 +91,19 @@ module init :
     public function init()
     {
         parent::init();
-        \Yii::$app->view->theme->pathMap[your_module_name.'/views'] = [your_module_name.'/themes/'.\Yii::$app->view->theme->active.'/views'];
+        if(isset(Yii::$app->view->theme->active)){
+            Yii::$app->view->theme->pathMap[Yii::$app->view->theme->active][alias_of_module.'/views'] = [alias_of_module'/themes/'.Yii::$app->view->theme->active.'/views'];
+        }
         // custom initialization code goes here
     }
+```
+
+alias of module is modify from module class namespace like :
+
+```
+   common\modules\member
+```
+modify to
+```
+   @common/modules/member
 ```
